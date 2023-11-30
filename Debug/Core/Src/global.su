@@ -1,0 +1,5 @@
+global.c:11:6:toggle_led1	8	static
+global.c:16:6:toggle_led2	8	static
+global.c:20:6:toggle_led3	8	static
+global.c:25:6:toggle_led4	8	static
+global.c:30:6:toggle_led5	8	static
