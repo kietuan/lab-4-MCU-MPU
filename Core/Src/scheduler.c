@@ -13,10 +13,15 @@
 
 static task task_array[SCH_MAX_TASKS]; //array assign the task
 
-static void SCH_Delete_Tasks (int index)
+static int SCH_Delete_Tasks (int index)
 {
+	int done = 1;
+	if (task_array[index].function != NULL)
+		done = 0;
+
 	task_array[index].function = NULL;
 	task_array[index].runMe = 0;
+	return done;
 }
 
 // void SCH_Delete_Tasks_Name (void(*func) (void))

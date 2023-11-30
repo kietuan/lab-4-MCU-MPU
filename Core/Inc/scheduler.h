@@ -29,7 +29,6 @@ void SCH_Dispatch_Tasks(void);
 
 int SCH_Add_Task(void (*function)(void), int initial_delay, int period);  // return the added task
 
-void SCH_Delete_Tasks_Name(void (*function)(void));
 
 
 #endif /* INC_SCHEDULER_H_ */
